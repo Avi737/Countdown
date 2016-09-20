@@ -2,7 +2,7 @@
 
 
     Countdown timer that counts every second down to the end of 2016.
-    At the end of 2016, the timer stops, and the screen Display "Happy New Year!"
+    At the end of 2016, the timer stops and the screen display "Happy New Year!".
     
 
  - I built this project using: Javascript, JQuery,HTML,CSS, Animate.CSS
