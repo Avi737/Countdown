@@ -1,9 +1,9 @@
 # Countdown
 
 
-<p>Countdown timer that counts every second down to the end of 2016. At the end of 2016, the timer stops, and the screen Display "Happy New Year!"
-
-I built this project using: Javascript, JQuery,HTML,CSS, Animate.CSS.
+<p>Countdown timer that counts every second down to the end of 2016.
+At the end of 2016, the timer stops, and the screen Display "Happy New Year!"
+I built this project using: Javascript, JQuery,HTML,CSS, Animate.CSS
 The whole project takes about 30 minutes to implement.</p>
 
 
