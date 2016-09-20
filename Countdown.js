@@ -16,15 +16,12 @@ function updateTimer(deadline){
     };
 }
 
-
 function  animateClock(span){
-    span.className = "turn"; // giving a class turn into the injected span.
+    span.className = "turn"; // giving a class "turn" into the injected span.
     setTimeout(function(){
         span.className = "";
     },700);
 }
-
-
 
 // SetInterval going to be fired every second.
 function startTimer(id,deadline){
@@ -38,16 +35,12 @@ function startTimer(id,deadline){
                       +'<span>' + timer.minutes + '</span>'
                       +'<span>' + timer.seconds + '</span>';
 
-
-
      // Animations
         var spans = clock.getElementsByTagName("span"); // will get all the above spans that been injected to the clock div.
-        animateClock(spans[3]); // calling this function every second.
+        animateClock(spans[3]); // calling this function every second. functioning like an array so accessing to the 3rd element in the array.
         if(timer.seconds == 59) animateClock(spans[2]);  // == 59 because we're going to be in a second 60 which is a minute.
         if(timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
         if(timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(spans[0]); // when we getting to a new day.
-
-
 
     // Check for the end of timer.
         if(timer.total < 1){ //means the difference
@@ -61,12 +54,9 @@ function startTimer(id,deadline){
     },1000);
 }
 
-
-
-
 // when the window loads fire this function.
 window.onload = function(){
-    //var deadline = new Date("January 1, 2017 00:00:00"); // Declare a deadline.
-    var deadline = new Date("September 20, 2016 08:07:20");
+    var deadline = new Date("January 1, 2017 00:00:00"); // Declare a deadline.
+    // var deadline = new Date("September 20, 2016 08:49:20");
     startTimer("clock",deadline); // we're going to inject into the clock id of the html the deadline.
 };
