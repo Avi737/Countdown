@@ -75,17 +75,6 @@ span.turn{
     100%{transform: rotatex(360deg)}
 }
 
-
-body {
-	background: #000;
-	margin: 0;
-}
-
-canvas {
-	cursor: crosshair;
-	display: block;
-}
-
 #countdown{
     display: block;
 }
